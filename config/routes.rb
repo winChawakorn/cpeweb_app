@@ -9,4 +9,11 @@ get '/about', to: 'static_pages#about'
 
 get '/admission', to: 'static_pages#admission'
 
+get '/lab', to: 'static_pages#Lab'
+
+get '/tuition_fees', to: 'static_pages#tuition_fees'
+
+get '/contact', to: 'static_pages#contact'
+
+
 end
