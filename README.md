@@ -1,24 +1,21 @@
-# README
+Chawakorn Suphepre 
+ -as leader
+ -worked on main html page and css style
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sirasath Piyapootinun
+ -worked on story board
+ -worked on tuitions fee page
 
-Things you may want to cover:
+Worawat Chueajedton
+ -worked on story board
+ -worked on contact us and research page
 
-* Ruby version
+Pawan Intawongsa
+ -worked on rail and heroku
+ -worked on about and admission page
 
-* System dependencies
+Story on board : https://ispexam.storiesonboard.com/m/cpewebapp
 
-* Configuration
+Github : https://github.com/winChawakorn/cpeweb_app
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Heroku : https://cpewebapp.herokuapp.com/  ,  https://dashboard.heroku.com/apps/cpewebapp/deploy/heroku-git
