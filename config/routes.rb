@@ -15,5 +15,9 @@ get '/tuition_fees', to: 'static_pages#tuition_fees'
 
 get '/contact', to: 'static_pages#contact'
 
+get '/login', to: 'static_pages#login'
+
+get '/academic', to: 'static_pages#academic'
+
 
 end
