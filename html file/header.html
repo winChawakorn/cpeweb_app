@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>
+        <%= yield(:title) %>
+    </title>
+
+    <%= csrf_meta_tags %>
+
+        <%= stylesheet_link_tag 'application', media: 'all',
+
+'data-turbolinks-track': 'reload' %>
+
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+                <!--[if lt IE 9]>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+
+</script>
+
+<![endif]-->
+
+</head>
+
+<body>
+
+    <!--<header class="navbar navbar-fixed-top navbar-inverse">-->
+    <header>
+
+        <div class="container">
+
+            <%= link_to image_tag("logo.jpg", alt: "cpe ku logo"),
+'https://sample-app-winchawakorn.c9users.io/' %>
+
+                <nav>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+                            <%= link_to "Home", root_path %>
+                        </li>
+
+                        <li>
+                            <%= link_to "About", help_path %>
+                        </li>
+
+                        <li>
+                            <%= link_to "Administration", login_path %>
+                        </li>
+
+                        <li>
+                            <%= link_to "Admissions", login_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Tuition and Scholarships", login_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Academics", login_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Research", login_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Activity", login_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Contact us", login_path%>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <%= yield %>
+            <%= render 'layouts/footer' %>
+
+    </div>
+
+</body>
+
+</html>
