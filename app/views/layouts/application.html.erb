@@ -4,21 +4,92 @@
 
 <head>
 
-<title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+    <title>
+        <%= yield(:title) %>
+    </title>
 
-<%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
 
-<%= stylesheet_link_tag 'application', media: 'all',
+        <%= stylesheet_link_tag 'application', media: 'all',
 
 'data-turbolinks-track': 'reload' %>
 
-<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+                <!--[if lt IE 9]>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+
+</script>
+
+<![endif]-->
 
 </head>
 
 <body>
 
-<%= yield %>
+    <!--<header class="navbar navbar-fixed-top navbar-inverse">-->
+    <header>
+
+        <div class="container">
+
+            <%= link_to image_tag("logo.jpg", alt: "cpe ku logo"),
+'https://sample-app-winchawakorn.c9users.io/' %>
+
+                <nav>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+                            <%= link_to "Home", root_path %>
+                        </li>
+
+                        <li>
+                            <%= link_to "About", help_path %>
+                        </li>
+
+                        <li>
+                            <%= link_to "Administration", about_path %>
+                        </li>
+
+                        <li>
+                            <%= link_to "Admissions", admission_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Tuition and Scholarships", root_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Academics", root_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Research", root_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Activity", root_path%>
+                        </li>
+
+                        <li>
+                            <%= link_to "Contact us", root_path%>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <%= yield %>
+            <%= render 'layouts/footer' %>
+
+    </div>
 
 </body>
 
