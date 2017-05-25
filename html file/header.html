@@ -35,19 +35,18 @@
 
             <%= link_to image_tag("logo.jpg", alt: "cpe ku logo"),
 'https://sample-app-winchawakorn.c9users.io/' %>
+                <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                <html xmlns="http://www.w3.org/1999/xhtml">
 
-                <nav>
+                <head>
+                </head>
 
-                    <ul class="nav navbar-nav navbar-right">
+                <div id="wrapper">
 
-                        <li>
-                            <%= link_to "Home", root_path %>
-                        </li>
 
-                        <li>
-                            <%= link_to "About", help_path %>
-                        </li>
+                    <!--<div id="Search"></div>-->
 
+<<<<<<< HEAD
                         <li>
                             <%= link_to "Administration", help_path %>
                         </li>
@@ -75,21 +74,79 @@
                         <li>
                             <%= link_to "Contact us", root_path%>
                         </li>
+=======
+                    <form name="message" action="">
+                        <input name="usermsg" type="text" id="usermsg" size="63" />
+                        <!--<input name="submitmsg" type="submit"  id="submitmsg" value="Search" />-->
+                        <%= link_to "Search", root_path %>
+                    </form>
+                </div>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+                <script type="text/javascript">
+                    // jQuery Document
+                    $(document).ready(function() {
 
-                    </ul>
+                    });
+                </script>
+</body>
 
-                </nav>
+</html>
 
-        </div>
+<nav>
 
-    </header>
+    <ul class="nav navbar-nav navbar-right">
 
-    <div class="container">
+        <li>
+            <%= link_to "Home", root_path %>
+        </li>
 
-        <%= yield %>
-            <%= render 'layouts/footer' %>
+        <li>
+            <%= link_to "About", help_path %>
+        </li>
 
-    </div>
+        <li>
+            <%= link_to "Administration", login_path %>
+        </li>
+
+        <li>
+            <%= link_to "Admissions", login_path%>
+        </li>
+
+        <li>
+            <%= link_to "Tuition and Scholarships", login_path%>
+        </li>
+
+        <li>
+            <%= link_to "Academics", academics_path%>
+        </li>
+
+        <li>
+            <%= link_to "Research", login_path%>
+        </li>
+
+        <li>
+            <%= link_to "Activity", login_path%>
+        </li>
+
+        <li>
+            <%= link_to "Contact us", login_path%>
+        </li>
+>>>>>>> de3c4e25a8838cc762c674e8c98128ee01193725
+
+    </ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<div class="container">
+
+    <%= yield %>
+        <%= render 'layouts/footer' %>
+
+</div>
 
 </body>
 
