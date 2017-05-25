@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>
-      Admissions
+        Admissions
     </title>
-  </head>
-  <body>
-    <h1> Tuition Fee </h1>
-  <p>
-    60,700 Baht per semester.(for Thai Student) <br>
-    70,700 Baht per semester.(for International Student)
-  </P>
-  </body>
+</head>
+
+<body>
+    <h2> Tuition Fee </h2>
+    <p>
+        60,700 Baht per semester.(for Thai Student) <br> 70,700 Baht per semester.(for International Student)
+    </P>
+    <h2> Scholarships </h2>
+    <p>
+        1. Excellent Student Scholarships <br>
+        2. Internship Abroad Scholarships <br>
+        3. Student Exchange Scholarships <br>
+        4. AEC Student Exchange Scholarships <br>
+        5. Scholarships from our partners e.g., <a href="http://www.triumphmotorcycles.com">Triumph Motorcycles, Thailand (http://www.triumphmotorcycles.com)</a> <br> <br>
+        More Information (iup@ku.ac.th)
+    </p>
+</body>
+
 </html>
